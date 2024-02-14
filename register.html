@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Login - MESMUN</title>
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="assets/img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/MESMUN%20LOGO%20GOLD%20(1).png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="180x180" href="assets/img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/MESMUN%20LOGO%20GOLD%20(1).png">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
+    <link rel="stylesheet" href="assets/css/Stats-icons.css">
+    <link rel="stylesheet" href="assets/css/Testimonials-images.css">
+</head>
+
+<body>
+    <!-- Start: Navbar Centered Links -->
+    <nav class="navbar navbar-expand-md sticky-top navbar-shrink py-3 navbar-light" id="mainNav">
+        <div class="container"><a class="navbar-brand d-flex align-items-center" href="/"><span class="bs-icon-lg bs-icon-circle bs-icon-primary shadow d-flex justify-content-center align-items-center me-2 bs-icon"><img width="55" height="65" src="assets/img/MESMUN%20LOGO%20GOLD.png"></span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html" style="font-family: 'Forum', 'Vogue', sans-serif ;">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Our Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tickets.html">Tickets</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacts.html">Contacts</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav><!-- End: Navbar Centered Links -->
+    <!-- Start: Login Form Basic -->
+    <section class="position-relative py-4 py-xl-5">
+        <div class="container">
+            <div class="row mb-5" style="margin-top: -1px;padding-bottom: 0px;margin-bottom: 15px;">
+                <div class="col-md-8 col-xl-6 text-center mx-auto">
+                    <h2 style="padding-bottom: 0px;margin-top: 0px;padding-top: 0px;margin-bottom: 1px;">Create Your Account</h2>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center" style="padding-top: 31px;margin-top: -80px;">
+                <div class="col-md-6 col-xl-4">
+                    <div class="card mb-5"><!-- Include select2 CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" />
+
+<!-- Include jQuery (required for select2) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Include select2 JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Vogue&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+<style>
+    * {
+        font-family: 'Forum', 'Vogue', sans-serif;
+    }
+</style>
+<div class="card-body d-flex flex-column align-items-center">
+    <div class="bs-icon-xl bs-icon-circle bs-icon-primary bs-icon my-4">
+        <svg class="bi bi-person" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
+            viewBox="0 0 16 16">
+            <path
+                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664z">
+            </path>
+        </svg>
+    </div>
+    <form  id="registrationForm" class="text-center" method="post"
+        action="https://script.google.com/macros/s/AKfycbwlKPgw6YYTVY7mJmKVBFivmMINuUCxz4WgYk78bBJjh_Yc-ya6VtLA0sD4RUqacbaU/exec">
+        <div class="mb-3">
+            <label for="name">Name:</label>
+            <input class="form-control" type="text" name="name" placeholder="Name" required />
+        </div>
+        <div class="mb-3">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" name="email" id="email" placeholder="Email" required
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+            <div class="invalid-feedback">Please enter a valid email.</div>
+        </div>
+        <div class="mb-3">
+            <label for="Phone">Phone:</label>
+            <input class="form-control" type="tel" name="phone" placeholder="Phone number" required />
+        </div>
+        <div class="mb-3">
+            <label for="guardian_phone">Guardian Phone:</label>
+            <input class="form-control" type="text" name="guardian_phone" placeholder="Guardian Phone number"
+                required />
+        </div>
+        <div class="mb-3">
+            <label for="guardian_relation">Guardian Relation:</label>
+            <select class="form-control" name="guardian_relation" id="guardian_relation" required>
+                <option value="">Please select an option</option>
+                <option value="Father">Father</option>
+                <option value="Mother">Mother</option>
+                <option value="Brother">Brother</option>
+                <option value="Sister">Sister</option>
+                <option value="Aunt">Aunt</option>
+                <option value="Uncle">Uncle</option>
+                <option value="Grandmother">Grandfather</option>
+                <option value="Grandmother">Grandmother</option>
+                <!-- Add more options as needed -->
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="residence">Site of residence:</label>
+            <input class="form-control" type="text" name="residence" placeholder="Site of residence" required />
+        </div>
+        <div class="mb-3">
+            <label for="age">Age:</label>
+            <input class="form-control" type="date" name="age" placeholder="Age" required />
+        </div>
+        <div class="mb-3">
+            <label for="grade">Grade:</label>
+            <select class="form-control" name="grade" id="grade" required>
+                <option value="">Please select an option</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="school">School:</label>
+            <input class="form-control" type="text" name="school" placeholder="School" required />
+        </div>
+        <div class="mb-3">
+            <label for="nationality">Nationality:</label>
+            <select class="form-control" name="nationality" id="nationality" required>
+                <option value="">Please select an option</option>
+                <!-- Options will be dynamically generated -->
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="education_system">Education System:</label>
+            <select class="form-control" name="education_system" id="education_system" required>
+                <option value="">Please select an option</option>
+                <option value="Thanaweya Amma">Thanaweya Amma</option>
+                <option value="Abitur">Abitur</option>
+                <option value="IGCSE">IGCSE</option>
+                <option value="American">American</option>
+                <option value="IB">IB</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="previous_mun_experiences">Previous MUN experiences:</label>
+            <textarea class="form-control" name="previous_mun_experiences"
+                placeholder="Previous MUN experiences"></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="council1">Council Choice 1:</label>
+            <select class="form-control" name="council1" id="council1" required>
+                <!-- Options will be dynamically generated -->
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label for="council2">Council Choice 2:</label>
+            <select class="form-control" name="council2" id="council2" required>
+                <!-- Options will be dynamically generated -->
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="need_bus">Will you need a bus? (Kindly note that buses have an extra fee)</label>
+            <select class="form-control" name="need_bus" id="need_bus" required>
+                <option value="">Please select an option</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="food_restrictions">Food restrictions:</label>
+            <textarea class="form-control" name="food_restrictions" id="food_restrictions"
+                placeholder="Food restrictions"></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="extra_comments">Extra comments:</label>
+            <textarea class="form-control" name="extra_comments" id="extra_comments"
+                placeholder="Extra comments"></textarea>
+        </div>
+        <div class="mb-3">
+            <button class="btn btn-primary d-block w-100" type="submit" id="registerButton">Register</button>
+        </div>
+        <!--
+            <p class="text-muted">Forgot your password?</p>
+         -->
+        <input type="hidden" id="ticketType" name="ticketType">
+    </form>
+</div>
+<script>
+    // Fetch the countries data from the RestCountries API
+    fetch('https://restcountries.com/v3.1/independent?status=true')
+        .then(response => response.json())
+        .then(data => {
+            const selectElement = $('#nationality');
+
+            // Create an option element for each country
+            data.forEach(country => {
+                // Replace "Israel" with "Palestine"
+                if (country.name.common === 'Israel') {
+                    country.name.common = 'Palestine';
+                    country.cca2 = 'PS';
+                }
+
+                const optionElement = new Option(country.name.common, country.cca2);
+                $(optionElement).data('icon', 'https://flagcdn.com/w20/' + country.cca2.toLowerCase() +
+                    '.png');
+
+                // Make Egypt the default selected value
+                if (country.name.common === 'Egypt') {
+                    optionElement.selected = true;
+                }
+
+                selectElement.append(optionElement);
+            });
+
+            selectElement.select2({
+                templateResult: formatCountry,
+                templateSelection: formatCountry
+            });
+        })
+        .catch(error => console.error('Error:', error));
+
+    function formatCountry(country) {
+        if (!country.id) {
+            return country.text;
+        }
+        var $country = $(
+            '<span><img src="' + $(country.element).data('icon') + '" class="img-flag" /> ' + country.text +
+            '</span>'
+        );
+        return $country;
+    };
+    // Define the councils available for each grade
+    var councilsByGrade = {
+        '7': ['UNHCR'],
+        '8': ['UNHCR', 'UNOOSA'],
+        '9': ['JCC', 'ICJ', 'UNGA6th', 'UN Trusteeship', 'UNOOSA'],
+        '10': ['JCC', 'ICJ', 'UNGA6th', 'UN Trusteeship'],
+        '11': ['JCC', 'ICJ', 'UNGA6th', 'UN Trusteeship'],
+        '12': ['JCC', 'ICJ', 'UNGA6th', 'UN Trusteeship']
+    };
+    // Add event listener for the grade select element
+    document.getElementById('grade').addEventListener('change', function () {
+        var grade = this.value;
+        var councils = councilsByGrade[grade];
+
+        // Clear the council choices dropdowns and add the default option
+        ['council1', 'council2'].forEach(function (id) {
+            var selectElement = document.getElementById(id);
+            selectElement.innerHTML = '';
+
+            var defaultOption = document.createElement('option');
+            defaultOption.value = '';
+            defaultOption.textContent = grade ? 'Please select an option' : 'Please choose grade first';
+            selectElement.appendChild(defaultOption);
+
+            // If a grade is selected, create an option element for each council
+            if (grade) {
+                councils.forEach(function (council) {
+                    var optionElement = document.createElement('option');
+                    optionElement.value = council;
+                    optionElement.textContent = council;
+                    selectElement.appendChild(optionElement);
+                });
+            }
+        });
+
+        // Check if all fields are filled
+        checkFields();
+    });
+
+    // Add event listener for the first council choice dropdown
+    document.getElementById('council1').addEventListener('change', function () {
+        var council1 = this.value;
+        var grade = document.getElementById('grade').value;
+        var councils = councilsByGrade[grade];
+
+        // Clear the second council choice dropdown and add the default option
+        var selectElement = document.getElementById('council2');
+        selectElement.innerHTML = '';
+
+        var defaultOption = document.createElement('option');
+        defaultOption.value = '';
+        defaultOption.textContent = grade ? 'Please select an option' : 'Please choose grade first';
+        selectElement.appendChild(defaultOption);
+
+        // If a grade is selected, create an option element for each council that is not the first council choice
+        if (grade) {
+            councils.forEach(function (council) {
+                if (council !== council1) {
+                    var optionElement = document.createElement('option');
+                    optionElement.value = council;
+                    optionElement.textContent = council;
+                    selectElement.appendChild(optionElement);
+                }
+            });
+        }
+
+        // Check if all fields are filled
+        checkFields();
+    });
+
+    // Add event listeners for all dropdowns
+    ['need_bus', 'education_system', 'grade', 'council1', 'council2'].forEach(function (id) {
+        document.getElementById(id).addEventListener('change', function () {
+            // If an option is selected, remove the default option
+            if (this.value && this.options[0].value === '') {
+                this.removeChild(this.options[0]);
+            }
+            // Check if all fields are filled
+            checkFields();
+        });
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+        // Get the ticketType parameter from the URL
+        var urlParams = new URLSearchParams(window.location.search);
+        var ticketType = urlParams.get('ticketType');
+        // Store the ticketType in the hidden field
+        document.getElementById('ticketType').value = ticketType;
+
+    });
+    // Trigger the change event to populate the council choices dropdowns when the page loads
+    document.getElementById('grade').dispatchEvent(new Event('change'));
+
+
+    function checkFields() {
+        var allFieldsFilled = Array.from(document.getElementById('registrationForm').elements).every(function (
+            element) {
+            // Check if the element is a select or input field and if it has a value
+            return !(element.nodeName === 'SELECT' || element.nodeName === 'INPUT') || element.value;
+        });
+
+        document.getElementById('registerButton').disabled = !allFieldsFilled;
+    }
+
+    // Initially disable the register button
+    window.onload = checkFields;
+
+    Array.from(document.getElementById('registrationForm').elements).forEach(function (element) {
+        if (element.nodeName === 'SELECT' || element.nodeName === 'INPUT') {
+            element.addEventListener('change', checkFields);
+        }
+    });
+
+    document.getElementById('registrationForm').addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        // Get the form data
+        var formData = new FormData(this);
+
+        // Send the form data
+        fetch(this.action, {
+                method: this.method,
+                body: formData
+            })
+            .then(function (response) {
+                if (!response.ok) {
+                    // Show an alert and return a rejected promise to stop the chain of .then() functions
+                    alert('Network response was not ok');
+                    return Promise.reject('Network response was not ok');
+                }
+                // Show an alert saying the form data was submitted successfully
+                //alert('Form data was submitted successfully');
+            })
+            .then(function (data) {
+                // Show a success message and redirect the user
+                alert('Thank you! Please check your inbox and spam folder for the confirmation email.');
+                window.location.href = 'index.html';
+            })
+            .catch(function (error) {
+                // Show an alert for any errors
+                alert('There was a problem submitting the form. Please try again.' + error);
+            });
+    });
+</script>
+
+<style>
+    .img-flag {
+        width: 20px;
+        margin-right: 8px;
+    }
+
+    .nationality {
+        text-align: left;
+        direction: ltr;
+    }
+
+    label {
+        text-align: left;
+        display: block;
+    }
+</style></div>
+                </div>
+            </div>
+        </div>
+    </section><!-- End: Login Form Basic -->
+    <!-- Start: Footer Multi Column -->
+    <footer class="bg-primary-gradient">
+        <div class="container py-4 py-lg-5">
+            <hr>
+            <div class="text-muted d-flex justify-content-between align-items-center pt-3">
+                <p class="mb-0">Copyright © 2024 MESMUN</p>
+                <ul class="list-inline mb-0">
+                    <li class="list-inline-item"><a href="https://www.facebook.com/MESMUNs?mibextid=LQQJ4d"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-facebook">
+                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"></path>
+                            </svg></a></li>
+                    <li class="list-inline-item"><a href="https://www.tiktok.com/@mesmun?_t=8ioVGP81jd7&amp;_r=1"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-tiktok">
+                                <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"></path>
+                            </svg></a></li>
+                    <li class="list-inline-item"><a href="https://www.instagram.com/mesmun_?igsh=b2ZwcXFuaHRydW82"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-instagram">
+                                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"></path>
+                            </svg></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer><!-- End: Footer Multi Column -->
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bold-and-bright.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
